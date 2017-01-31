@@ -1,0 +1,10 @@
+[Unit]
+Description=Concrete Mixer service
+
+[Service]
+Restart=always
+ExecStart=/concrete-mixer/init.sh
+User=cmuser
+
+[Install]
+WantedBy=default.target
