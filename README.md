@@ -12,7 +12,7 @@ To run Concrète Mixer in default mode you'll need an internet connection to acc
 
 Run:
 
-    `docker run -d --device=/dev/snd:/dev/snd concretemixer/cm-rpi-dac:latest`
+    docker run -d --device=/dev/snd:/dev/snd concretemixer/cm-rpi-dac:latest
 
 Docker will download the image from dockerhub and build and run a new container.
 
