@@ -7,7 +7,6 @@ RUN apt-get update && \
         build-essential \
         flex \
         git \
-        icecast2 \
         libasound2-dev \
         libav-tools \
         libjack-jackd2-0 \
@@ -33,8 +32,8 @@ RUN cd /concrete-mixer \
     && . venv/bin/activate \
     && pip install -r requirements.txt
 
-COPY conf/concrete.conf /concrete-mixer/concrete.conf
+COPY concrete.conf /concrete-mixer/concrete.conf
 
 EXPOSE 2424
 
-CMD cd /concrete-mixer && /bin/bash ./init.sh &>> /tmp/concrete-mixer.log && tail -f /dev/null
+CMD cd /concrete-mixer && /bin/bash ./init.sh &>> /tmp/concrete-mixer.log
