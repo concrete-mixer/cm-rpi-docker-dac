@@ -36,4 +36,4 @@ COPY concrete.conf /concrete-mixer/concrete.conf
 
 EXPOSE 2424
 
-CMD cd /concrete-mixer && /bin/bash ./init.sh &>> /tmp/concrete-mixer.log
+CMD cd /concrete-mixer && /bin/bash ./init.sh

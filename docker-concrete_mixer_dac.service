@@ -1,7 +1,7 @@
 # See https://docs.docker.com/engine/admin/host_integration/
 
 [Unit]
-Description=Concrete Mixer Internet container
+Description=Concrete Mixer DAC container
 Requires=docker.service
 After=docker.service
 
@@ -10,7 +10,6 @@ Restart=always
 ExecStart=/usr/bin/docker run --name=concrete_mixer_dac --device=/dev/snd:/dev/snd cm-rpi-dac:latest
 ExecStop=/usr/bin/docker stop -t 2 concrete_mixer_dac
 ExecStopPost=/usr/bin/docker rm -f concrete_mixer_dac
-User=cmuser
 
 [Install]
 WantedBy=default.target
