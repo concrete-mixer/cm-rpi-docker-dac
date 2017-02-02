@@ -45,4 +45,4 @@ To do this:
 
 # See also
 
-[An internet radio (Icecast2)-enabled Concrète Mixer docker image](https://github.com/concrete-mixer/cm-rpi-docker-dac)
+[An internet radio (Icecast2)-enabled Concrète Mixer docker image](https://github.com/concrete-mixer/cm-rpi-docker-internet)
